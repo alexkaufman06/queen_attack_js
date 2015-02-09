@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Queen Attack?</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Queen Attack?</h1>
+
+      <form id="queen-attack">
+        <div class="form-group">
+          <label for="queen-x-coordinates">Enter queen's x-coordinate:</label>
+          <input id="queen-x-coordinates" type="text">
+          <br>
+          <label for="queen-y-coordinates">Enter queen's y-coordinate:</label>
+          <input id="queen-y-coordinates" type="text">
+          <br>
+          <label for="attack-x-coordinates">Enter potential attack x-coordinate:</label>
+          <input id="attack-x-coordinates" type="text">
+          <br>
+          <label for="attack-y-coordinates">Enter potential attack y-coordinate:</label>
+          <input id="attack-y-coordinates" type="text">
+        </div>
+
+        <button type="submit" class="btn btn-danger">Attack</button>
+      </form>
+      <br>
+      <div id="result">
+        <p>[<span class="queen-coordinates"></span>] is <span class="not"></span> a valid attack.</p>
+      </div>
+    </div>
+  </body>
+</html>
