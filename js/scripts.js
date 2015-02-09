@@ -1,3 +1,7 @@
-var queenAttack = function(x_self, y_self, x_attack, y_attack) {
-  return false;
+var queenAttack = function(queen_coordinates, attack_coordinates) {
+  if (queen_coordinates[1] === attack_coordinates[1]) {
+    return true;
+  } else {
+    return false;
+  }
 };
